@@ -73,6 +73,10 @@
         </span>
       </div>
 
+      {% if citation.tags.size > 0 %}
+        {% include tags.html tags=citation.tags link="/publications/" %}
+      {% endif %}
+
       {% if include.style == "rich" %}
         {% if citation.description %}
           <div class="citation-description">
@@ -100,8 +104,8 @@
           </div>
         {% endif %}
 
-        {% if citation.tags.size > 0 or citation.repo %}
-          {% include tags.html tags=citation.tags repo=citation.repo %}
+        {% if citation.repo %}
+          {% include tags.html tags=citation.tags repo=citation.repo link="/publications/" %}
         {% endif %}
       {% endif %}
     </div>

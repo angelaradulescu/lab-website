@@ -66,6 +66,10 @@
   margin: 0;
 }
 
+.portrait[data-style="square"] .portrait-image {
+  border-radius: var(--rounded);
+}
+
 .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);

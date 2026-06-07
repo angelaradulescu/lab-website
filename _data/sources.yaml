@@ -1,23 +1,93 @@
-- id: doi:10.1371/journal.pcbi.1007128
+# Add one entry per publication. The cite pipeline (Manubot) expands these into
+# _data/citations.yaml — usually via GitHub Actions after you push.
+
+- id: doi:10.64898/2026.05.03.722562
   type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
+  highlighted: true
   tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
+    - attention-learning
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+- id: doi:10.64898/2026.03.11.710688
+  type: paper
+  title: Learning to Attend Through Value-Based Hypothesis Testing
+  tags:
+    - attention-learning
 
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+- id: doi:10.1037/xge0001727
+  type: paper
+  tags:
+    - attention-learning
+
+- id: doi:10.1101/2024.10.09.617461
+  type: paper
+
+- id: doi:10.1007/s42761-024-00270-0
+  type: paper
+
+- id: https://escholarship.org/uc/item/78m0779f
+  type: paper
+  highlighted: true
+  tags:
+    - bd-phenotyping
+
+- id: doi:10.1371/journal.pcbi.1011707
+  type: paper
+
+- id: doi:10.1146/annurev-neuro-092920-120559
+  type: paper
+
+- id: doi:10.1016/j.tics.2023.08.016
+  type: paper
+  tags:
+    - naturalistic-rl
+
+- id: https://escholarship.org/uc/item/43q3n00p
+  type: paper
+
+- id: doi:10.1523/JNEUROSCI.0254-19.2019
+  type: paper
+
+- id: doi:10.1016/j.tics.2019.01.010
+  type: paper
+  tags:
+    - attention-learning
+
+- id: doi:10.1016/j.neuron.2016.12.040
+  type: paper
+  tags:
+    - attention-learning
+
+- id: doi:10.1037/pag0000112
+  type: paper
+
+- id: doi:10.7554/eLife.14155
+  type: paper
+
+- id: doi:10.1523/JNEUROSCI.2978-14.2015
+  type: paper
+  tags:
+    - attention-learning
+
+- id: doi:10.1371/journal.pcbi.1003939
+  type: paper
+
+- id: doi:10.1016/j.conb.2019.03.011
+  type: paper
+
+- id: doi:10.1162/OPMI.a.322
+  type: paper
+  highlighted: true
+  tags:
+    - naturalistic-rl
+
+# Conference proceedings (no DOI). Manubot cannot parse PDF metadata; fill bibliographic fields here.
+- id: https://2019.ccneuro.org/proceedings/0000481.pdf
+  type: paper
+  title: "A particle filtering account of selective attention during learning"
+  tags:
+    - attention-learning
+  authors:
+    - Angela Radulescu, Yael Niv, Nathaniel Daw
+  publisher: "Cognitive Computational Neuroscience (CCN) 2019"
+  date: "2019-09-01"
+  link: https://2019.ccneuro.org/proceedings/0000481.pdf

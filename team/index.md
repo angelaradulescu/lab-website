@@ -1,35 +1,44 @@
 ---
-title: Team
+title: Current Team
 nav:
-  order: 3
-  tooltip: About our team
+  group: people
+  label: Current Team
+  order: 1
+  tooltip: Current lab members
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# {% include icon.html icon="fa-solid fa-users" %}Current Team
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+## Principal Investigator
 
-{% include section.html background="images/background.jpg" dark=true %}
+{% include list.html data="members" component="member-profile" filter="role == 'principal-investigator'" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{% assign postdocs = site.members | data_filter: "role == 'postdoc' and !group" | sort: "name" %}
+{% if postdocs.size > 0 %}
+## Postdocs
 
-{% include section.html %}
+{% include list.html data="members" component="member-profile" filter="role == 'postdoc' and !group" sort="name" %}
+{% endif %}
 
-{% capture content %}
+{% assign students = site.members | data_filter: "role == 'phd' and !group" | sort: "name" %}
+{% if students.size > 0 %}
+## Graduate students
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+{% include list.html data="members" component="member-profile" filter="role == 'phd' and !group" sort="name" %}
+{% endif %}
 
-{% endcapture %}
+{% assign coordinators = site.members | data_filter: "role == 'crc' and !group" | sort: "name" %}
+{% if coordinators.size > 0 %}
+## Research coordinators
 
-{% include grid.html style="square" content=content %}
+{% include list.html data="members" component="member-profile" filter="role == 'crc' and !group" sort="name" %}
+{% endif %}
+
+{% assign volunteers = site.members | data_filter: "role == 'volunteer' and !group" | sort: "name" %}
+{% if volunteers.size > 0 %}
+## Volunteers
+
+{% include list.html data="members" component="member-profile" filter="role == 'volunteer' and !group" sort="name" %}
+{% endif %}

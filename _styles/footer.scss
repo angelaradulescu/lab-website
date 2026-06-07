@@ -10,6 +10,11 @@ footer {
   padding: 40px;
   line-height: var(--spacing);
   box-shadow: var(--shadow);
+  background: var(--background-alt);
+}
+
+footer.background:before {
+  display: none;
 }
 
 footer a {

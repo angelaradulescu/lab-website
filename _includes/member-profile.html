@@ -1,0 +1,120 @@
+{% if include.lookup %}
+  {% assign member = site.members
+    | where_exp: "member", "member.slug == include.lookup"
+    | first
+  %}
+{% elsif include.slug %}
+  {% assign member = site.members
+    | where_exp: "member", "member.slug == include.slug"
+    | first
+  %}
+{% endif %}
+
+{% assign name = include.name | default: member.name %}
+{% assign image = include.image | default: member.image %}
+{% assign role = include.role | default: member.role %}
+{% assign description = include.description | default: member.description %}
+{% assign affiliation = include.affiliation | default: member.affiliation %}
+{% assign dates = include.dates | default: member.dates %}
+{% assign links = member.links %}
+{% assign bio = include.content | default: member.content %}
+{% assign type = site.data.types[role] %}
+{% assign style = include.style | default: "" %}
+
+<div class="member-profile-container">
+  <div class="member-profile" data-style="{{ style }}">
+    {% if image %}
+      <div class="member-profile-image">
+        <img
+          src="{{ image | relative_url | uri_escape }}"
+          alt="{{ name | default: 'member portrait' | regex_strip }}"
+          loading="lazy"
+          {% include fallback.html %}
+        >
+      </div>
+    {% endif %}
+
+    <div class="member-profile-text">
+      {% if name %}
+        <div class="member-profile-name">
+          {% if member.url and style != "alumni" %}
+            <a href="{{ member.url | relative_url | uri_escape }}">{{ name }}</a>
+          {% else %}
+            {{ name }}
+          {% endif %}
+          {% if dates %}
+            <span class="member-profile-dates"> ({{ dates }})</span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if description or type %}
+        <div class="member-profile-role">
+          {{ description | default: type.description }}
+        </div>
+      {% endif %}
+
+      {% if affiliation %}
+        <div class="member-profile-affiliation">
+          {% if style == "alumni" %}
+            Currently: {{ affiliation }}
+          {% else %}
+            {{ affiliation }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% assign website = links.website | default: links.home-page %}
+      {% if style == "alumni" %}
+        {% if website %}
+          <div class="member-profile-links">
+            <div class="member-profile-link-row">
+              <span class="member-profile-link-label">Website:</span>
+              <a
+                href="{{ website | replace: '$LINK', website | relative_url }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {{ website }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="member-profile-links">
+          <div class="member-profile-link-row">
+            <span class="member-profile-link-label">Email:</span>
+            {% if links.email %}
+              {% assign email_type = site.data.types.email %}
+              <a href="{{ email_type.link | replace: '$VALUE', links.email }}">
+                {{ links.email }}
+              </a>
+            {% else %}
+              <span class="member-profile-link-empty">—</span>
+            {% endif %}
+          </div>
+          <div class="member-profile-link-row">
+            <span class="member-profile-link-label">Website:</span>
+            {% if website %}
+              <a
+                href="{{ website | replace: '$LINK', website | relative_url }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {{ website }}
+              </a>
+            {% else %}
+              <span class="member-profile-link-empty">—</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if bio and style != "alumni" %}
+        <div class="member-profile-bio">
+          {{ bio | markdownify }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

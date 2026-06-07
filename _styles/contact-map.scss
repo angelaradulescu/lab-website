@@ -1,0 +1,16 @@
+---
+---
+
+.map-embed {
+  margin-top: 24px;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+}

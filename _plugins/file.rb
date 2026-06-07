@@ -14,6 +14,12 @@ module Jekyll
       path = File.join(Dir.getwd, file)
       return File.file?(path) ? File.read(path) : nil
     end
+
+    # cache-bust static assets using last modified time
+    def file_mtime(file)
+      path = File.join(Dir.getwd, file)
+      return File.file?(path) ? File.mtime(path).to_i.to_s : nil
+    end
   end
 end
 

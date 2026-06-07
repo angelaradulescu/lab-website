@@ -1,4 +1,9 @@
-<figure class="figure">
+<figure
+  class="figure"
+  {% if include.style %}
+    data-style="{{ include.style }}"
+  {% endif %}
+>
   <a
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"

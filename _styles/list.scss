@@ -3,7 +3,7 @@
 
 ul,
 ol {
-  margin: 20px 0;
+  margin: 14px 0;
   padding-left: 40px;
 }
 
@@ -14,11 +14,20 @@ ul {
 li {
   margin: 5px 0;
   padding-left: 10px;
-  text-align: justify;
+  text-align: left;
   line-height: var(--spacing);
 
   ul,
   ol {
     margin: 0;
+  }
+}
+
+ul.compact-list {
+  margin: 8px 0;
+
+  li {
+    margin: 0;
+    line-height: 1.5;
   }
 }

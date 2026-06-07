@@ -1,1 +1,5 @@
-- orcid: 0000-0002-4655-3773
+# Add your ORCID(s) here to auto-import works from the ORCID API, e.g.:
+# - orcid: 0000-0001-2345-6789
+#
+# Leave empty to show only papers listed in sources.yaml.
+[]
