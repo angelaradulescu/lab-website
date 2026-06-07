@@ -1,1 +1,1 @@
-Sitemap: http://www.angelaradulescu.com/lab-website/sitemap.xml
+Sitemap: http://radulesculab.org/sitemap.xml
