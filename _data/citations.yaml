@@ -1,7 +1,8 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
 - id: doi:10.64898/2026.05.03.722562
-  title: Coordinated human prefrontal dynamics sustain task-state representations during learning
+  title: Coordinated human prefrontal dynamics sustain task-state representations
+    during learning
   authors:
   - C. Maher
   - S. Qasim
@@ -11,9 +12,9 @@
   - F. Panov
   - A. Radulescu
   - I. Saez
-  publisher: bioRxiv
-  date: '2026-05-08'
-  link: https://doi.org/10.64898/2026.05.03.722562
+  publisher: openRxiv
+  date: '2026-05-05'
+  link: https://doi.org/hb6vmz
   type: paper
   highlighted: true
   tags:
@@ -78,12 +79,10 @@
   plugin: sources.py
   file: sources.yaml
 - id: https://escholarship.org/uc/item/78m0779f
-  title: Dynamic self-efficacy as a computational mechanism of mania emergence
-  authors:
-  - Jing Li
-  - Angela Radulescu
-  publisher: Proceedings of the Annual Meeting of the Cognitive Science Society
-  date: '2024-01-01'
+  title: ''
+  authors: []
+  publisher: ''
+  date: ''
   link: https://escholarship.org/uc/item/78m0779f
   type: paper
   highlighted: true
@@ -132,13 +131,10 @@
   plugin: sources.py
   file: sources.yaml
 - id: https://escholarship.org/uc/item/43q3n00p
-  title: 'Name that state: How language affects human reinforcement learning'
-  authors:
-  - Angela Radulescu
-  - Wai Keen Vong
-  - Todd M. Gureckis
-  publisher: Proceedings of the Annual Meeting of the Cognitive Science Society
-  date: '2022-01-01'
+  title: ''
+  authors: []
+  publisher: ''
+  date: ''
   link: https://escholarship.org/uc/item/43q3n00p
   type: paper
   plugin: sources.py
