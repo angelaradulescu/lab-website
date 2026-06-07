@@ -41,24 +41,27 @@
 
 
 
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Testbed | Lab Website Template</title>
+<title>Testbed | Radulescu Lab</title>
 
-<link rel="icon" href="/lab-website/images/icon.png">
+<link rel="icon" type="image/png" href="/lab-website/images/icon.png?v=1780852045">
+<link rel="apple-touch-icon" href="/lab-website/images/icon.png?v=1780852045">
 
 <meta name="title" content="Testbed">
-<meta name="description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta name="description" content=". An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
 
 <meta property="og:title" content="Testbed">
-<meta property="og:site_title" content="Lab Website Template">
-<meta property="og:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="og:site_title" content="Radulescu Lab">
+<meta property="og:description" content=". An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
 <meta property="og:url" content="http://www.angelaradulescu.com/lab-website">
 <meta property="og:image" content="/lab-website/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Testbed">
-<meta property="twitter:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="twitter:description" content=". An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
 <meta property="twitter:url" content="http://www.angelaradulescu.com/lab-website">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/lab-website/images/share.jpg">
@@ -74,7 +77,7 @@
       "@type": "WebSite",
     
     "name": "Testbed",
-    "description": "by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
+    "description": ". An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
     "headline": "Testbed",
     "publisher": {
       "@type": "Organization",
@@ -90,7 +93,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Inter:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Source+Sans%203:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -159,7 +162,7 @@
   
 
   
-    <link href="/lab-website/_styles/dark-toggle.css" rel="stylesheet">
+    <link href="/lab-website/_styles/contact-map.css" rel="stylesheet">
   
 
   
@@ -224,6 +227,10 @@
 
   
     <link href="/lab-website/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/lab-website/_styles/member-profile.css" rel="stylesheet">
   
 
   
@@ -370,6 +377,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -385,9 +394,9 @@
 
   <script src="/lab-website/_scripts/anchors.js"></script>
 
-  <script src="/lab-website/_scripts/dark-mode.js"></script>
-
   <script src="/lab-website/_scripts/fetch-tags.js"></script>
+
+  <script src="/lab-website/_scripts/nav-dropdown.js"></script>
 
   <script src="/lab-website/_scripts/search.js"></script>
 
@@ -410,79 +419,14 @@
 
 
 
+
+
 <header class="background" style="--image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg')" data-dark="false">
   <a href="/lab-website/" class="home">
     
       <span class="logo">
         
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">Lab Website Template</span>
-        
-        
-          <span class="subtitle">by the Greene Lab</span>
+          <img src="/lab-website/images/logo.png?v=1780852045" alt="logo">
         
       </span>
     
@@ -492,35 +436,138 @@
 
   <nav>
     
+      
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/publications/" data-tooltip="Published works">
+          Publications
+        </a>
+      
     
       
-        <a href="/lab-website/research/" data-tooltip="Published works">
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/research/" data-tooltip="Our research areas and methods">
           Research
         </a>
       
     
       
-        <a href="/lab-website/projects/" data-tooltip="Software, datasets, and more">
-          Projects
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/values/" data-tooltip="Our mission and lab values">
+          Mission &amp; Values
         </a>
       
     
       
-        <a href="/lab-website/team/" data-tooltip="About our team">
-          Team
+        
+        
+        
+          
+          
+          
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle" tabindex="0" aria-haspopup="true">
+              People
+            </span>
+            <div class="nav-dropdown-menu">
+              
+                <a href="/lab-website/team/" data-tooltip="Current lab members">
+                  Current Team
+                </a>
+              
+                <a href="/lab-website/team/alumni/" data-tooltip="Former lab members">
+                  Alumni
+                </a>
+              
+            </div>
+          </div>
+        
+      
+
+      
+      
+    
+      
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/news/" data-tooltip="Lab news and updates">
+          News
         </a>
       
     
       
-        <a href="/lab-website/blog/" data-tooltip="Musings and miscellany">
-          Blog
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/get-involved/" data-tooltip="Join the lab">
+          Get Involved
         </a>
       
     
       
-        <a href="/lab-website/contact/" data-tooltip="Email, address, and location">
+        
+        
+        
+      
+
+      
+      
+        <a href="/lab-website/contact/" data-tooltip="Address and location">
           Contact
         </a>
+      
+    
+      
+        
+        
+        
+      
+
+      
+      
+    
+      
+        
+        
+        
+      
+
+      
+      
+    
+      
+        
+        
+        
+      
+
+      
       
     
   </nav>
@@ -1151,24 +1198,129 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/hbvg3p" class="citation-title">
-        Scalable data harmonization for single-cell image-based profiling with CytoTable
+      <a href="https://doi.org/10.64898/2026.05.03.722562" class="citation-title">
+        Coordinated human prefrontal dynamics sustain task-state representations during learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way
+        C. Maher, S. Qasim, G. Tostaeva, L. Nunez Martinez, S. Ghatan, F. Panov, A. Radulescu, I. Saez
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">Patterns</span>
+        <span class="citation-publisher">bioRxiv</span>
          · 
-        <span class="citation-date">01 Mar 2026</span>
+        <span class="citation-date">08 May 2026</span>
          · 
-        <span class="citation-id">doi:10.1016/j.patter.2026.101514</span>
+        <span class="citation-id">doi:10.64898/2026.05.03.722562</span>
       </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26q" class="citation-title">
+        Learning to Attend Through Value-Based Hypothesis Testing
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        C. Maher, I. Saez, A. Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">openRxiv</span>
+         · 
+        <span class="citation-date">12 Mar 2026</span>
+         · 
+        <span class="citation-id">doi:10.64898/2026.03.11.710688</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx5g6" class="citation-title">
+        A Resource-Rational Account of Human Eye Movements During Immersive Visual Search
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Bas van Opheusden, Frederick Callaway, Thomas L. Griffiths, James M. Hillis
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Open Mind</span>
+         · 
+        <span class="citation-date">01 Jan 2026</span>
+         · 
+        <span class="citation-id">doi:10.1162/OPMI.a.322</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20naturalistic-rl%22" class="tag" data-tag="naturalistic-rl" data-tooltip='Show items with the tag "naturalistic-rl"'>
+        naturalistic-rl
+      </a>
+    
+  </div>
+
+
+      
 
       
     </div>
@@ -1183,24 +1335,195 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/g9rfr3" class="citation-title">
-        Scalable data harmonization for single-cell image-based profiling with CytoTable
+      <a href="https://doi.org/hbx26r" class="citation-title">
+        Rewards transiently and automatically enhance sustained attention.
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way
+        Juliana E. Trach, Megan T. deBettencourt, Angela Radulescu, Samuel D. McDougle
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Journal of Experimental Psychology: General</span>
+         · 
+        <span class="citation-date">01 Apr 2025</span>
+         · 
+        <span class="citation-id">doi:10.1037/xge0001727</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2024">2024</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26s" class="citation-title">
+        Unveiling value functions in social cognition with multi-agent inverse reinforcement learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yusi Chen, Yuan Cheng, Myungji Kwak, Angela Radulescu, Herbert Zheng Wu
 
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">openRxiv</span>
          · 
-        <span class="citation-date">25 Jun 2025</span>
+        <span class="citation-date">12 Oct 2024</span>
          · 
-        <span class="citation-id">doi:10.1101/2025.06.19.660613</span>
+        <span class="citation-id">doi:10.1101/2024.10.09.617461</span>
       </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26t" class="citation-title">
+        Emotional Overshadowing: Pleasant and Unpleasant Cues Overshadow Neutral Cues in Human Associative Learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Jianming Zhu, Angela Radulescu, Daniel Bennett
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Affective Science</span>
+         · 
+        <span class="citation-date">01 Sep 2024</span>
+         · 
+        <span class="citation-id">doi:10.1007/s42761-024-00270-0</span>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gss4s6" class="citation-title">
+        Naturalistic reinforcement learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Toby Wise, Kara Emery, Angela Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Trends in Cognitive Sciences</span>
+         · 
+        <span class="citation-date">01 Feb 2024</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.tics.2023.08.016</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20naturalistic-rl%22" class="tag" data-tag="naturalistic-rl" data-tooltip='Show items with the tag "naturalistic-rl"'>
+        naturalistic-rl
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://escholarship.org/uc/item/78m0779f" class="citation-title">
+        Dynamic self-efficacy as a computational mechanism of mania emergence
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Jing Li, Angela Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Proceedings of the Annual Meeting of the Cognitive Science Society</span>
+         · 
+        <span class="citation-date">01 Jan 2024</span>
+         · 
+        <span class="citation-id">https://escholarship.org/uc/item/78m0779f</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20bd-phenotyping%22" class="tag" data-tag="bd-phenotyping" data-tooltip='Show items with the tag "bd-phenotyping"'>
+        bd-phenotyping
+      </a>
+    
+  </div>
+
+
+      
 
       
     </div>
@@ -1215,114 +1538,26 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gs6kmr" class="citation-title">
-        The Monarch Initiative in 2024: an analytic platform integrating phenotypes, genes and diseases across species
-      </a>
-
-      <div class="citation-authors" data-tooltip="Tim E Putman, Kevin Schaper, Nicolas Matentzoglu, Vincent P Rubinetti, Faisal S Alquaddoomi, Corey Cox, J Harry Caufield, Glass Elsarboukh, Sarah Gehrke, Harshad Hegde, Justin T Reese, Ian Braun, Richard M Bruskiewich, Luca Cappelletti, Seth Carbon, Anita R Caron, Lauren E Chan, Christopher G Chute, Katherina G Cortes, Vinícius De Souza, Tommaso Fontana, Nomi L Harris, Emily L Hartley, Eric Hurwitz, Julius O B Jacobsen, Madan Krishnamurthy, Bryan J Laraway, James A McLaughlin, Julie A McMurry, Sierra A T Moxon, Kathleen R Mullen, Shawn T O’Neil, Kent A Shefchek, Ray Stefancsik, Sabrina Toro, Nicole A Vasilevsky, Ramona L Walls, Patricia L Whetzel, David Osumi-Sutherland, Damian Smedley, Peter N Robinson, Christopher J Mungall, Melissa A Haendel, Monica C Munoz-Torres" tabindex="0">
-        Tim E Putman, Kevin Schaper, Nicolas Matentzoglu, Vincent P Rubinetti, Faisal S Alquaddoomi, …, Damian Smedley, Peter N Robinson, Christopher J Mungall, Melissa A Haendel, Monica C Munoz-Torres
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Nucleic Acids Research</span>
-         · 
-        <span class="citation-date">24 Nov 2023</span>
-         · 
-        <span class="citation-id">doi:10.1093/nar/gkad1082</span>
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gsvf5z" class="citation-title">
-        Integration of 168,000 samples reveals global patterns of the human gut microbiome
+      <a href="https://doi.org/hbx26v" class="citation-title">
+        Affect-congruent attention modulates generalized reward expectations
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Richard J. Abdill, Samantha P. Graham, Vincent Rubinetti, Frank W. Albert, Casey S. Greene, Sean Davis, Ran Blekhman
+        Daniel Bennett, Angela Radulescu, Sam Zorowitz, Valkyrie Felso, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
+        <span class="citation-publisher">PLOS Computational Biology</span>
          · 
-        <span class="citation-date">11 Oct 2023</span>
+        <span class="citation-date">21 Dec 2023</span>
          · 
-        <span class="citation-id">doi:10.1101/2023.10.11.560955</span>
+        <span class="citation-id">doi:10.1371/journal.pcbi.1011707</span>
       </div>
 
       
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gr5hb5" class="citation-title">
-        MyGeneset.info: an interactive and programmatic platform for community-curated and user-created collections of genes
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Ricardo Avila, Vincent Rubinetti, Xinghua Zhou, Dongbo Hu, Zhongchao Qian, Marco Alvarado Cano, Everaldo Rodolpho, Ginger Tsueng, Casey Greene, Chunlei Wu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Nucleic Acids Research</span>
-         · 
-        <span class="citation-date">18 Apr 2023</span>
-         · 
-        <span class="citation-id">doi:10.1093/nar/gkad289</span>
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/grmcb9" class="citation-title">
-        Hetnet connectivity search provides rapid insights into how two biomedical entities are related
-      </a>
-
-      <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene" tabindex="0">
-        Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, …, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
-         · 
-        <span class="citation-date">07 Jan 2023</span>
-         · 
-        <span class="citation-id">doi:10.1101/2023.01.05.522941</span>
-      </div>
 
       
     </div>
@@ -1337,61 +1572,33 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gsd85n" class="citation-title">
-        Hetnet connectivity search provides rapid insights into how biomedical entities are related
+      <a href="https://escholarship.org/uc/item/43q3n00p" class="citation-title">
+        Name that state: How language affects human reinforcement learning
       </a>
 
-      <div class="citation-authors" data-tooltip="Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, Faisal Alquaddoomi, Dongbo Hu, David N Nicholson, Yun Hao, Blair D Sullivan, Michael W Nagle, Casey S Greene" tabindex="0">
-        Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, …, David N Nicholson, Yun Hao, Blair D Sullivan, Michael W Nagle, Casey S Greene
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Wai Keen Vong, Todd M. Gureckis
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">GigaScience</span>
+        <span class="citation-publisher">Proceedings of the Annual Meeting of the Cognitive Science Society</span>
          · 
-        <span class="citation-date">28 Dec 2022</span>
+        <span class="citation-date">01 Jan 2022</span>
          · 
-        <span class="citation-id">doi:10.1093/gigascience/giad047</span>
+        <span class="citation-id">https://escholarship.org/uc/item/43q3n00p</span>
       </div>
+
+      
 
       
     </div>
   </div>
 </div>
 
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gstx7j" class="citation-title">
-        MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny
-      </a>
-
-      <div class="citation-authors" data-tooltip="Faisal S Alquaddoomi, Joseph T Burke, Lo Sosinski, David A Mayer, Evan P Brenner, Samuel Z Chen, Jacob D Krol, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi" tabindex="0">
-        Faisal S Alquaddoomi, Joseph T Burke, Lo Sosinski, David A Mayer, Evan P Brenner, …, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
-         · 
-        <span class="citation-date">22 Feb 2022</span>
-         · 
-        <span class="citation-id">doi:10.1101/2022.02.18.461833</span>
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<h3 id="2020">2020</h3>
+<h3 id="2021">2021</h3>
 
 <div class="citation-container">
   <div class="citation">
@@ -1401,82 +1608,24 @@ It was the spring of hope, it was the winter of despair.</p>
       
       <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/c7np" class="citation-title">
-        Open collaborative writing with Manubot
+      <a href="https://doi.org/gjs695" class="citation-title">
+        Human Representation Learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
+        Angela Radulescu, Yeon Soon Shin, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">PLOS Computational Biology</span>
+        <span class="citation-publisher">Annual Review of Neuroscience</span>
          · 
-        <span class="citation-date">04 Dec 2020</span>
+        <span class="citation-date">08 Jul 2021</span>
          · 
-        <span class="citation-id">doi:10.1371/journal.pcbi.1007128</span>
+        <span class="citation-id">doi:10.1146/annurev-neuro-092920-120559</span>
       </div>
 
       
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gg2mjh" class="citation-title">
-        Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Genome Biology</span>
-         · 
-        <span class="citation-date">11 May 2020</span>
-         · 
-        <span class="citation-id">doi:10.1186/s13059-020-02021-3</span>
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gg7m48" class="citation-title">
-        Constructing knowledge graphs and their biomedical applications
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        David N. Nicholson, Casey S. Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Computational and Structural Biotechnology Journal</span>
-         · 
-        <span class="citation-date">01 Jan 2020</span>
-         · 
-        <span class="citation-id">doi:10.1016/j.csbj.2020.05.017</span>
-      </div>
 
       
     </div>
@@ -1491,31 +1640,31 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gfxjxf" class="citation-title">
-        Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality
+      <a href="https://doi.org/hbx26w" class="citation-title">
+        Intact Reinforcement Learning But Impaired Attentional Control During Multidimensional Probabilistic Learning in Older Adults
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
+        Reka Daniel, Angela Radulescu, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
+        <span class="citation-publisher">The Journal of Neuroscience</span>
          · 
-        <span class="citation-date">11 Mar 2019</span>
+        <span class="citation-date">11 Dec 2019</span>
          · 
-        <span class="citation-id">doi:10.1101/573782</span>
+        <span class="citation-id">doi:10.1523/JNEUROSCI.0254-19.2019</span>
       </div>
+
+      
 
       
     </div>
   </div>
 </div>
-
-<h3 id="2018">2018</h3>
 
 <div class="citation-container">
   <div class="citation">
@@ -1523,24 +1672,310 @@ It was the spring of hope, it was the winter of despair.</p>
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/ckcj" class="citation-title">
-        Sci-Hub provides access to nearly all scholarly literature
+      <a href="https://2019.ccneuro.org/proceedings/0000481.pdf" class="citation-title">
+        A particle filtering account of selective attention during learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene
+        Angela Radulescu,  Yael Niv,  Nathaniel Daw
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Cognitive Computational Neuroscience (CCN) 2019</span>
+         · 
+        <span class="citation-date">01 Sep 2019</span>
+         · 
+        <span class="citation-id">https://2019.ccneuro.org/proceedings/0000481.pdf</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gkcfjb" class="citation-title">
+        State representation in mental illness
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Current Opinion in Neurobiology</span>
+         · 
+        <span class="citation-date">01 Apr 2019</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.conb.2019.03.011</span>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gf75z6" class="citation-title">
+        Holistic Reinforcement Learning: The Role of Structure and Attention
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Yael Niv, Ian Ballard
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Trends in Cognitive Sciences</span>
+         · 
+        <span class="citation-date">01 Apr 2019</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.tics.2019.01.010</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2017">2017</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/f9tpns" class="citation-title">
+        Dynamic Interaction between Reinforcement Learning and Attention in Multidimensional Environments
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yuan Chang Leong, Angela Radulescu, Reka Daniel, Vivian DeWoskin, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Neuron</span>
+         · 
+        <span class="citation-date">01 Jan 2017</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.neuron.2016.12.040</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2016">2016</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/g6fsff" class="citation-title">
+        DYT1 dystonia increases risk taking in humans
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        David Arkadir, Angela Radulescu, Deborah Raymond, Naomi Lubarr, Susan B Bressman, Pietro Mazzoni, Yael Niv
 
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">eLife</span>
          · 
-        <span class="citation-date">01 Mar 2018</span>
+        <span class="citation-date">01 Jun 2016</span>
          · 
-        <span class="citation-id">doi:10.7554/eLife.32822</span>
+        <span class="citation-id">doi:10.7554/eLife.14155</span>
       </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26x" class="citation-title">
+        The effects of aging on the interaction between reinforcement learning and attention.
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Reka Daniel, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Psychology and Aging</span>
+         · 
+        <span class="citation-date">01 Jan 2016</span>
+         · 
+        <span class="citation-id">doi:10.1037/pag0000112</span>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2015">2015</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gf3ktm" class="citation-title">
+        Reinforcement Learning in Multidimensional Environments Relies on Attention Mechanisms
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yael Niv, Reka Daniel, Andra Geana, Samuel J. Gershman, Yuan Chang Leong, Angela Radulescu, Robert C. Wilson
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">The Journal of Neuroscience</span>
+         · 
+        <span class="citation-date">27 May 2015</span>
+         · 
+        <span class="citation-id">doi:10.1523/JNEUROSCI.2978-14.2015</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2014">2014</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gdz7n9" class="citation-title">
+        Statistical Computations Underlying the Dynamics of Memory Updating
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Samuel J. Gershman, Angela Radulescu, Kenneth A. Norman, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">PLoS Computational Biology</span>
+         · 
+        <span class="citation-date">06 Nov 2014</span>
+         · 
+        <span class="citation-id">doi:10.1371/journal.pcbi.1003939</span>
+      </div>
+
+      
 
       
     </div>
@@ -1552,14 +1987,14 @@ It was the spring of hope, it was the winter of despair.</p>
 <h3 id="list-projects">List projects</h3>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Dataset" class="card-image">
-    <img src="/lab-website/images/photo.jpg" alt="Cool Dataset" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Web Server" class="card-image">
+    <img src="/lab-website/images/photo.jpg" alt="Cool Web Server" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
-        Cool Dataset
+        Cool Web Server
     </a>
     
 
@@ -1580,92 +2015,8 @@ It was the spring of hope, it was the winter of despair.</p>
 
   <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Package" class="card-image">
-    <img src="/lab-website/images/photo.jpg" alt="Cool Package" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Package
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template">
-    
-      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Tutorial" class="card-image">
-    <img src="/lab-website/images/photo.jpg" alt="Cool Tutorial" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Tutorial
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template">
-    
-      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-      <a href="/lab-website/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
+      <a href="/lab-website/?search=%22tag:%20software%22" class="tag" data-tag="software" data-tooltip='Show items with the tag "software"'>
+        software
       </a>
     
   </div>
@@ -1704,7 +2055,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
   <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/?search=%22tag:%20software%22" class="tag" data-tooltip='Show items with the tag "software"'>
+      <a href="/lab-website/?search=%22tag:%20software%22" class="tag" data-tag="software" data-tooltip='Show items with the tag "software"'>
         software
       </a>
     
@@ -1716,14 +2067,14 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Web Server" class="card-image">
-    <img src="/lab-website/images/photo.jpg" alt="Cool Web Server" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Tutorial" class="card-image">
+    <img src="/lab-website/images/photo.jpg" alt="Cool Tutorial" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
-        Cool Web Server
+        Cool Tutorial
     </a>
     
 
@@ -1744,8 +2095,92 @@ It was the spring of hope, it was the winter of despair.</p>
 
   <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/?search=%22tag:%20software%22" class="tag" data-tooltip='Show items with the tag "software"'>
-        software
+      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tag="resource" data-tooltip='Show items with the tag "resource"'>
+        resource
+      </a>
+    
+      <a href="/lab-website/?search=%22tag:%20publication%22" class="tag" data-tag="publication" data-tooltip='Show items with the tag "publication"'>
+        publication
+      </a>
+    
+  </div>
+
+
+    
+  </div>
+</div>
+
+<div class="card" data-style="">
+  <a href="https://github.com/" aria-label="Cool Package" class="card-image">
+    <img src="/lab-website/images/photo.jpg" alt="Cool Package" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a href="https://github.com/" class="card-title">
+        Cool Package
+    </a>
+    
+
+    
+      <span class="card-subtitle">a subtitle</span>
+    
+
+    
+      <p>
+        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      </p>
+    
+
+    
+      
+
+
+  <div class="tags" data-repo="greenelab/lab-website-template">
+    
+      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tag="resource" data-tooltip='Show items with the tag "resource"'>
+        resource
+      </a>
+    
+  </div>
+
+
+    
+  </div>
+</div>
+
+<div class="card" data-style="">
+  <a href="https://github.com/" aria-label="Cool Dataset" class="card-image">
+    <img src="/lab-website/images/photo.jpg" alt="Cool Dataset" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a href="https://github.com/" class="card-title">
+        Cool Dataset
+    </a>
+    
+
+    
+      <span class="card-subtitle">a subtitle</span>
+    
+
+    
+      <p>
+        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      </p>
+    
+
+    
+      
+
+
+  <div class="tags" data-repo="greenelab/lab-website-template">
+    
+      <a href="/lab-website/?search=%22tag:%20resource%22" class="tag" data-tag="resource" data-tooltip='Show items with the tag "resource"'>
+        resource
       </a>
     
   </div>
@@ -1760,44 +2195,120 @@ It was the spring of hope, it was the winter of despair.</p>
 <h3 id="list-team-members">List team members</h3>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
+  <a href="/lab-website/members/meghan-gallo.html" class="portrait" data-style="" aria-label="Meghan Gallo, Ph.D.">
     
-      <i class="icon fa-solid fa-microscope"></i>
+      <i class="icon fa-solid fa-glasses"></i>
     
 
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+    <img src="/lab-website/images/team/Meghan_Gallo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
-        Jane Smith
+        Meghan Gallo, Ph.D.
       </span>
     
 
     
       <span class="portrait-description">
-        Principal Investigator
+        Visiting Postdoctoral Researcher
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/marjorie-xie.html" class="portrait" data-style="" aria-label="Marjorie Xie">
+    
+      <i class="icon fa-solid fa-glasses"></i>
+    
+
+    <img src="/lab-website/images/team/Marjorie_Xie.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Marjorie Xie
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former NYSAS AI and Society Fellow
       </span>
     
 
     
       <span class="portrait-affiliation">
-        University of Colorado
+        Postdoctoral Fellow at NYU
       </span>
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website/members/john-doe.html" class="portrait" data-style="" aria-label="John Doe">
+  <a href="/lab-website/members/luca-kosina.html" class="portrait" data-style="" aria-label="Luca Kosina">
     
       <i class="icon fa-solid fa-graduation-cap"></i>
     
 
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+    <img src="/lab-website/images/fallback.svg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
-        John Doe
+        Luca Kosina
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former MA Rotation Student (MPI Tubingen)
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/kara-emery.html" class="portrait" data-style="" aria-label="Kara Emery">
+    
+      <i class="icon fa-solid fa-glasses"></i>
+    
+
+    <img src="/lab-website/images/team/Kara_Emery.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Kara Emery
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former Postdoctoral Associate
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Director of Data Science, AI Hub, NYU McSilver Institute
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/jing-li.html" class="portrait" data-style="" aria-label="Jing Li">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/lab-website/images/team/Jing_Li.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Jing Li
       </span>
     
 
@@ -1812,22 +2323,182 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website/members/sarah-johnson.html" class="portrait" data-style="" aria-label="Sarah Johnson">
+  <a href="/lab-website/members/jackie-beltran.html" class="portrait" data-style="" aria-label="Jacqueline Beltrán">
     
-      <i class="icon fa-solid fa-code"></i>
+      <i class="icon fa-solid fa-graduation-cap"></i>
     
 
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+    <img src="/lab-website/images/team/Jackie_Beltran.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
-        Sarah Johnson
+        Jacqueline Beltrán
       </span>
     
 
     
       <span class="portrait-description">
-        Lead Programmer
+        Former Graduate Student Collaborator
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Havas Health Fellowship
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/itzel-martinez.html" class="portrait" data-style="" aria-label="Itzel Martinez">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/lab-website/images/fallback.svg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Itzel Martinez
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former MA Student (Mt. Sinai)
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/conor-fitzpatrick.html" class="portrait" data-style="" aria-label="Conor Fitzpatrick">
+    
+      <i class="icon fa-solid fa-hand-holding-heart"></i>
+    
+
+    <img src="/lab-website/images/fallback.svg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Conor Fitzpatrick
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Volunteer
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/christina-maher.html" class="portrait" data-style="" aria-label="Christina Maher">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/lab-website/images/team/Christina_Maher.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Christina Maher
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former Graduate Student
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Meta Reality Labs, Research Scientist Intern
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/catherine-kim.html" class="portrait" data-style="" aria-label="Catherine Kim">
+    
+      <i class="icon fa-solid fa-clipboard-user"></i>
+    
+
+    <img src="/lab-website/images/team/Catherine_Kim.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Catherine Kim
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Former Research Coordinator
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Matter Neuroscience
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/angela-radulescu.html" class="portrait" data-style="" aria-label="Angela Radulescu, Ph.D.">
+    
+      <i class="icon fa-solid fa-microscope"></i>
+    
+
+    <img src="/lab-website/images/team/Angela_Radulescu.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Angela Radulescu, Ph.D.
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Principal Investigator
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Icahn School of Medicine at Mount Sinai
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/lab-website/members/alexei-gannon.html" class="portrait" data-style="" aria-label="Alexei Gannon">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/lab-website/images/fallback.svg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Alexei Gannon
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
       </span>
     
 
@@ -1838,303 +2509,6 @@ It was the spring of hope, it was the winter of despair.</p>
 <hr>
 
 <h3 id="list-blog-posts">List blog posts</h3>
-
-<h3 id="2023">2023</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-      <a href="/lab-website/2023/02/23/example-post-3.html" class="post-excerpt-image" aria-label="Example post 3">
-        <img src="/lab-website/images/photo.jpg" alt="Example post 3" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2023/02/23/example-post-3.html">Example post 3</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>February 23, 2023</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20biology%22" class="tag" data-tooltip='Show items with the tag "biology"'>
-        biology
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20medicine%22" class="tag" data-tooltip='Show items with the tag "medicine"'>
-        medicine
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
-
-<h3 id="2021">2021</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2021/09/30/example-post-2.html">Example post 2</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>September 30, 2021</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
-
-<h3 id="2019">2019</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2019/01/07/example-post-1.html">Example post 1</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>January 07, 2019</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20biology%22" class="tag" data-tooltip='Show items with the tag "biology"'>
-        biology
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20medicine%22" class="tag" data-tooltip='Show items with the tag "medicine"'>
-        medicine
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20big-data%22" class="tag" data-tooltip='Show items with the tag "big-data"'>
-        big-data
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
   </section>
 
   
@@ -2158,22 +2532,24 @@ It was the spring of hope, it was the winter of despair.</p>
       
       
 
-      <a href="https://doi.org/gg7m48" class="citation-title">
-        Constructing knowledge graphs and their biomedical applications
+      <a class="citation-title">
+        [no title info]
       </a>
 
       <div class="citation-authors" tabindex="0">
-        David N. Nicholson, Casey S. Greene
+        
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">Computational and Structural Biotechnology Journal</span>
+        <span class="citation-publisher">[no publisher info]</span>
          · 
-        <span class="citation-date">01 Jan 2020</span>
+        <span class="citation-date">[no date info]</span>
          · 
-        <span class="citation-id">doi:10.1016/j.csbj.2020.05.017</span>
+        <span class="citation-id">[no id info]</span>
       </div>
+
+      
 
       
     </div>
@@ -2183,107 +2559,38 @@ It was the spring of hope, it was the winter of despair.</p>
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/c7np" class="citation-image" aria-label="Open collaborative writing with Manubot">
-        <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="Open collaborative writing with Manubot" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a class="citation-image" aria-label="citation link">
+        <img src="" alt="citation image" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      <i class="icon fa-solid fa-scroll"></i>
+      
 
-      <a href="https://doi.org/c7np" class="citation-title">
-        Open collaborative writing with Manubot
+      <a class="citation-title">
+        [no title info]
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
+        
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">PLOS Computational Biology</span>
+        <span class="citation-publisher">[no publisher info]</span>
          · 
-        <span class="citation-date">04 Dec 2020</span>
+        <span class="citation-date">[no date info]</span>
          · 
-        <span class="citation-id">doi:10.1371/journal.pcbi.1007128</span>
+        <span class="citation-id">[no id info]</span>
       </div>
 
       
-        
-          <div class="citation-description">
-            Lorem ipsum <em>dolor</em> <strong>sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-          </div>
+      
         
 
         
-          <div class="citation-buttons">
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare" aria-label="Manubot">
-      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span>
-      
-        <span>Manubot</span>
-      
-    </a>
-  </div>
-
-
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare" aria-label="Source code">
-      <i class="icon fa-solid fa-code"></i>
-      
-        <span>Manuscript Source</span>
-      
-    </a>
-  </div>
-
-
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare" aria-label="Website">
-      <i class="icon fa-solid fa-globe"></i>
-      
-        <span>Website</span>
-      
-    </a>
-  </div>
-
-
-            
-          </div>
-        
-
-        
-          
-
-
-  <div class="tags" data-repo="greenelab/meta-review">
-    
-      <a href="/lab-website/?search=%22tag:%20open-science%22" class="tag" data-tooltip='Show items with the tag "open-science"'>
-        open-science
-      </a>
-    
-      <a href="/lab-website/?search=%22tag:%20collaboration%22" class="tag" data-tooltip='Show items with the tag "collaboration"'>
-        collaboration
-      </a>
-    
-  </div>
-
 
         
       
@@ -2315,6 +2622,8 @@ It was the spring of hope, it was the winter of despair.</p>
          · 
         <span class="citation-id">[no id info]</span>
       </div>
+
+      
 
       
     </div>
@@ -2364,7 +2673,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
   <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/?search=%22tag:%20manual-tag%22" class="tag" data-tooltip='Show items with the tag "manual-tag"'>
+      <a href="/lab-website/?search=%22tag:%20manual-tag%22" class="tag" data-tag="manual-tag" data-tooltip='Show items with the tag "manual-tag"'>
         manual-tag
       </a>
     
@@ -2404,7 +2713,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
   <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/?search=%22tag:%20manual-tag%22" class="tag" data-tooltip='Show items with the tag "manual-tag"'>
+      <a href="/lab-website/?search=%22tag:%20manual-tag%22" class="tag" data-tag="manual-tag" data-tooltip='Show items with the tag "manual-tag"'>
         manual-tag
       </a>
     
@@ -2430,51 +2739,27 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="portrait">Portrait</h2>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
+  <a class="portrait" data-style="" aria-label="member link">
     
 
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
 
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
     
 
     
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
 
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website/members/john-doe.html" class="portrait" data-style="small" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
+  <a class="portrait" data-style="small" aria-label="member link">
     
 
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
 
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
     
 
     
@@ -2536,93 +2821,26 @@ It was the spring of hope, it was the winter of despair.</p>
     
 
     <div class="post-excerpt-text">
-      <a href="/lab-website/2019/01/07/example-post-1.html">Example post 1</a>
+      <a href=""></a>
 
       <div class="post-info">
   
-    
-    
+
+  
+  
+
+  
+
+  
+</div>
+
+
+
+
       
       
+      <p data-search="">
         
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>January 07, 2019</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20biology%22" class="tag" data-tooltip='Show items with the tag "biology"'>
-        biology
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20medicine%22" class="tag" data-tooltip='Show items with the tag "medicine"'>
-        medicine
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20big-data%22" class="tag" data-tooltip='Show items with the tag "big-data"'>
-        big-data
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
       </p>
     </div>
   </div>
@@ -2768,15 +2986,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="tags" data-repo="greenelab/lab-website-template">
     
-      <a href="/lab-website/blog?search=%22tag:%20ovarian-cancer%22" class="tag" data-tooltip='Show items with the tag "ovarian-cancer"'>
+      <a href="/lab-website/blog?search=%22tag:%20ovarian-cancer%22" class="tag" data-tag="ovarian-cancer" data-tooltip='Show items with the tag "ovarian-cancer"'>
         ovarian-cancer
       </a>
     
-      <a href="/lab-website/blog?search=%22tag:%20dataset%22" class="tag" data-tooltip='Show items with the tag "dataset"'>
+      <a href="/lab-website/blog?search=%22tag:%20dataset%22" class="tag" data-tag="dataset" data-tooltip='Show items with the tag "dataset"'>
         dataset
       </a>
     
-      <a href="/lab-website/blog?search=%22tag:%20gene-expression%22" class="tag" data-tooltip='Show items with the tag "gene-expression"'>
+      <a href="/lab-website/blog?search=%22tag:%20gene-expression%22" class="tag" data-tag="gene-expression" data-tooltip='Show items with the tag "gene-expression"'>
         gene-expression
       </a>
     
@@ -2948,31 +3166,156 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/hbvg3p" class="citation-image" aria-label="Scalable data harmonization for single-cell image-based profiling with CytoTable">
-        <img src="" alt="Scalable data harmonization for single-cell image-based profiling with CytoTable" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://doi.org/10.64898/2026.05.03.722562" class="citation-image" aria-label="Coordinated human prefrontal dynamics sustain task-state representations during learning">
+        <img src="" alt="Coordinated human prefrontal dynamics sustain task-state representations during learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/hbvg3p" class="citation-title">
-        Scalable data harmonization for single-cell image-based profiling with CytoTable
+      <a href="https://doi.org/10.64898/2026.05.03.722562" class="citation-title">
+        Coordinated human prefrontal dynamics sustain task-state representations during learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way
+        C. Maher, S. Qasim, G. Tostaeva, L. Nunez Martinez, S. Ghatan, F. Panov, A. Radulescu, I. Saez
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">Patterns</span>
+        <span class="citation-publisher">bioRxiv</span>
          · 
-        <span class="citation-date">01 Mar 2026</span>
+        <span class="citation-date">08 May 2026</span>
          · 
-        <span class="citation-id">doi:10.1016/j.patter.2026.101514</span>
+        <span class="citation-id">doi:10.64898/2026.05.03.722562</span>
       </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/hbx26q" class="citation-image" aria-label="Learning to Attend Through Value-Based Hypothesis Testing">
+        <img src="" alt="Learning to Attend Through Value-Based Hypothesis Testing" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26q" class="citation-title">
+        Learning to Attend Through Value-Based Hypothesis Testing
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        C. Maher, I. Saez, A. Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">openRxiv</span>
+         · 
+        <span class="citation-date">12 Mar 2026</span>
+         · 
+        <span class="citation-id">doi:10.64898/2026.03.11.710688</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/hbx5g6" class="citation-image" aria-label="A Resource-Rational Account of Human Eye Movements During Immersive Visual Search">
+        <img src="" alt="A Resource-Rational Account of Human Eye Movements During Immersive Visual Search" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx5g6" class="citation-title">
+        A Resource-Rational Account of Human Eye Movements During Immersive Visual Search
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Bas van Opheusden, Frederick Callaway, Thomas L. Griffiths, James M. Hillis
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Open Mind</span>
+         · 
+        <span class="citation-date">01 Jan 2026</span>
+         · 
+        <span class="citation-id">doi:10.1162/OPMI.a.322</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20naturalistic-rl%22" class="tag" data-tag="naturalistic-rl" data-tooltip='Show items with the tag "naturalistic-rl"'>
+        naturalistic-rl
+      </a>
+    
+  </div>
+
+
+      
 
       
         
@@ -2990,31 +3333,242 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/g9rfr3" class="citation-image" aria-label="Scalable data harmonization for single-cell image-based profiling with CytoTable">
-        <img src="" alt="Scalable data harmonization for single-cell image-based profiling with CytoTable" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://doi.org/hbx26r" class="citation-image" aria-label="Rewards transiently and automatically enhance sustained attention.">
+        <img src="" alt="Rewards transiently and automatically enhance sustained attention." loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/g9rfr3" class="citation-title">
-        Scalable data harmonization for single-cell image-based profiling with CytoTable
+      <a href="https://doi.org/hbx26r" class="citation-title">
+        Rewards transiently and automatically enhance sustained attention.
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way
+        Juliana E. Trach, Megan T. deBettencourt, Angela Radulescu, Samuel D. McDougle
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Journal of Experimental Psychology: General</span>
+         · 
+        <span class="citation-date">01 Apr 2025</span>
+         · 
+        <span class="citation-id">doi:10.1037/xge0001727</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2024">2024</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/hbx26s" class="citation-image" aria-label="Unveiling value functions in social cognition with multi-agent inverse reinforcement learning">
+        <img src="" alt="Unveiling value functions in social cognition with multi-agent inverse reinforcement learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26s" class="citation-title">
+        Unveiling value functions in social cognition with multi-agent inverse reinforcement learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yusi Chen, Yuan Cheng, Myungji Kwak, Angela Radulescu, Herbert Zheng Wu
 
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">openRxiv</span>
          · 
-        <span class="citation-date">25 Jun 2025</span>
+        <span class="citation-date">12 Oct 2024</span>
          · 
-        <span class="citation-id">doi:10.1101/2025.06.19.660613</span>
+        <span class="citation-id">doi:10.1101/2024.10.09.617461</span>
       </div>
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/hbx26t" class="citation-image" aria-label="Emotional Overshadowing: Pleasant and Unpleasant Cues Overshadow Neutral Cues in Human Associative Learning">
+        <img src="" alt="Emotional Overshadowing: Pleasant and Unpleasant Cues Overshadow Neutral Cues in Human Associative Learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26t" class="citation-title">
+        Emotional Overshadowing: Pleasant and Unpleasant Cues Overshadow Neutral Cues in Human Associative Learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Jianming Zhu, Angela Radulescu, Daniel Bennett
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Affective Science</span>
+         · 
+        <span class="citation-date">01 Sep 2024</span>
+         · 
+        <span class="citation-id">doi:10.1007/s42761-024-00270-0</span>
+      </div>
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/gss4s6" class="citation-image" aria-label="Naturalistic reinforcement learning">
+        <img src="" alt="Naturalistic reinforcement learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gss4s6" class="citation-title">
+        Naturalistic reinforcement learning
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Toby Wise, Kara Emery, Angela Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Trends in Cognitive Sciences</span>
+         · 
+        <span class="citation-date">01 Feb 2024</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.tics.2023.08.016</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20naturalistic-rl%22" class="tag" data-tag="naturalistic-rl" data-tooltip='Show items with the tag "naturalistic-rl"'>
+        naturalistic-rl
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://escholarship.org/uc/item/78m0779f" class="citation-image" aria-label="Dynamic self-efficacy as a computational mechanism of mania emergence">
+        <img src="" alt="Dynamic self-efficacy as a computational mechanism of mania emergence" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://escholarship.org/uc/item/78m0779f" class="citation-title">
+        Dynamic self-efficacy as a computational mechanism of mania emergence
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Jing Li, Angela Radulescu
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Proceedings of the Annual Meeting of the Cognitive Science Society</span>
+         · 
+        <span class="citation-date">01 Jan 2024</span>
+         · 
+        <span class="citation-id">https://escholarship.org/uc/item/78m0779f</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20bd-phenotyping%22" class="tag" data-tag="bd-phenotyping" data-tooltip='Show items with the tag "bd-phenotyping"'>
+        bd-phenotyping
+      </a>
+    
+  </div>
+
+
+      
 
       
         
@@ -3032,151 +3586,33 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gs6kmr" class="citation-image" aria-label="The Monarch Initiative in 2024: an analytic platform integrating phenotypes, genes and diseases across species">
-        <img src="" alt="The Monarch Initiative in 2024: an analytic platform integrating phenotypes, genes and diseases across species" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://doi.org/hbx26v" class="citation-image" aria-label="Affect-congruent attention modulates generalized reward expectations">
+        <img src="" alt="Affect-congruent attention modulates generalized reward expectations" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gs6kmr" class="citation-title">
-        The Monarch Initiative in 2024: an analytic platform integrating phenotypes, genes and diseases across species
-      </a>
-
-      <div class="citation-authors" data-tooltip="Tim E Putman, Kevin Schaper, Nicolas Matentzoglu, Vincent P Rubinetti, Faisal S Alquaddoomi, Corey Cox, J Harry Caufield, Glass Elsarboukh, Sarah Gehrke, Harshad Hegde, Justin T Reese, Ian Braun, Richard M Bruskiewich, Luca Cappelletti, Seth Carbon, Anita R Caron, Lauren E Chan, Christopher G Chute, Katherina G Cortes, Vinícius De Souza, Tommaso Fontana, Nomi L Harris, Emily L Hartley, Eric Hurwitz, Julius O B Jacobsen, Madan Krishnamurthy, Bryan J Laraway, James A McLaughlin, Julie A McMurry, Sierra A T Moxon, Kathleen R Mullen, Shawn T O’Neil, Kent A Shefchek, Ray Stefancsik, Sabrina Toro, Nicole A Vasilevsky, Ramona L Walls, Patricia L Whetzel, David Osumi-Sutherland, Damian Smedley, Peter N Robinson, Christopher J Mungall, Melissa A Haendel, Monica C Munoz-Torres" tabindex="0">
-        Tim E Putman, Kevin Schaper, Nicolas Matentzoglu, Vincent P Rubinetti, Faisal S Alquaddoomi, …, Damian Smedley, Peter N Robinson, Christopher J Mungall, Melissa A Haendel, Monica C Munoz-Torres
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Nucleic Acids Research</span>
-         · 
-        <span class="citation-date">24 Nov 2023</span>
-         · 
-        <span class="citation-id">doi:10.1093/nar/gkad1082</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gsvf5z" class="citation-image" aria-label="Integration of 168,000 samples reveals global patterns of the human gut microbiome">
-        <img src="" alt="Integration of 168,000 samples reveals global patterns of the human gut microbiome" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gsvf5z" class="citation-title">
-        Integration of 168,000 samples reveals global patterns of the human gut microbiome
+      <a href="https://doi.org/hbx26v" class="citation-title">
+        Affect-congruent attention modulates generalized reward expectations
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Richard J. Abdill, Samantha P. Graham, Vincent Rubinetti, Frank W. Albert, Casey S. Greene, Sean Davis, Ran Blekhman
+        Daniel Bennett, Angela Radulescu, Sam Zorowitz, Valkyrie Felso, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
+        <span class="citation-publisher">PLOS Computational Biology</span>
          · 
-        <span class="citation-date">11 Oct 2023</span>
+        <span class="citation-date">21 Dec 2023</span>
          · 
-        <span class="citation-id">doi:10.1101/2023.10.11.560955</span>
+        <span class="citation-id">doi:10.1371/journal.pcbi.1011707</span>
       </div>
 
       
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gr5hb5" class="citation-image" aria-label="MyGeneset.info: an interactive and programmatic platform for community-curated and user-created collections of genes">
-        <img src="" alt="MyGeneset.info: an interactive and programmatic platform for community-curated and user-created collections of genes" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gr5hb5" class="citation-title">
-        MyGeneset.info: an interactive and programmatic platform for community-curated and user-created collections of genes
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Ricardo Avila, Vincent Rubinetti, Xinghua Zhou, Dongbo Hu, Zhongchao Qian, Marco Alvarado Cano, Everaldo Rodolpho, Ginger Tsueng, Casey Greene, Chunlei Wu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Nucleic Acids Research</span>
-         · 
-        <span class="citation-date">18 Apr 2023</span>
-         · 
-        <span class="citation-id">doi:10.1093/nar/gkad289</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/grmcb9" class="citation-image" aria-label="Hetnet connectivity search provides rapid insights into how two biomedical entities are related">
-        <img src="" alt="Hetnet connectivity search provides rapid insights into how two biomedical entities are related" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/grmcb9" class="citation-title">
-        Hetnet connectivity search provides rapid insights into how two biomedical entities are related
-      </a>
-
-      <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene" tabindex="0">
-        Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, …, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
-         · 
-        <span class="citation-date">07 Jan 2023</span>
-         · 
-        <span class="citation-id">doi:10.1101/2023.01.05.522941</span>
-      </div>
 
       
         
@@ -3194,90 +3630,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gsd85n" class="citation-image" aria-label="Hetnet connectivity search provides rapid insights into how biomedical entities are related">
-        <img src="" alt="Hetnet connectivity search provides rapid insights into how biomedical entities are related" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gsd85n" class="citation-title">
-        Hetnet connectivity search provides rapid insights into how biomedical entities are related
-      </a>
-
-      <div class="citation-authors" data-tooltip="Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, Faisal Alquaddoomi, Dongbo Hu, David N Nicholson, Yun Hao, Blair D Sullivan, Michael W Nagle, Casey S Greene" tabindex="0">
-        Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, …, David N Nicholson, Yun Hao, Blair D Sullivan, Michael W Nagle, Casey S Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">GigaScience</span>
-         · 
-        <span class="citation-date">28 Dec 2022</span>
-         · 
-        <span class="citation-id">doi:10.1093/gigascience/giad047</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gstx7j" class="citation-image" aria-label="MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny">
-        <img src="" alt="MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gstx7j" class="citation-title">
-        MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny
-      </a>
-
-      <div class="citation-authors" data-tooltip="Faisal S Alquaddoomi, Joseph T Burke, Lo Sosinski, David A Mayer, Evan P Brenner, Samuel Z Chen, Jacob D Krol, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi" tabindex="0">
-        Faisal S Alquaddoomi, Joseph T Burke, Lo Sosinski, David A Mayer, Evan P Brenner, …, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
-         · 
-        <span class="citation-date">22 Feb 2022</span>
-         · 
-        <span class="citation-id">doi:10.1101/2022.02.18.461833</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<h3 id="2020">2020</h3>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/c7np" class="citation-image" aria-label="Open collaborative writing with Manubot">
-        <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="Open collaborative writing with Manubot" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://escholarship.org/uc/item/43q3n00p" class="citation-image" aria-label="Name that state: How language affects human reinforcement learning">
+        <img src="" alt="Name that state: How language affects human reinforcement learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -3285,133 +3639,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       
       <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/c7np" class="citation-title">
-        Open collaborative writing with Manubot
+      <a href="https://escholarship.org/uc/item/43q3n00p" class="citation-title">
+        Name that state: How language affects human reinforcement learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
+        Angela Radulescu, Wai Keen Vong, Todd M. Gureckis
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">PLOS Computational Biology</span>
+        <span class="citation-publisher">Proceedings of the Annual Meeting of the Cognitive Science Society</span>
          · 
-        <span class="citation-date">04 Dec 2020</span>
+        <span class="citation-date">01 Jan 2022</span>
          · 
-        <span class="citation-id">doi:10.1371/journal.pcbi.1007128</span>
+        <span class="citation-id">https://escholarship.org/uc/item/43q3n00p</span>
       </div>
 
       
-        
-          <div class="citation-description">
-            Lorem ipsum <em>dolor</em> <strong>sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-          </div>
-        
-
-        
-          <div class="citation-buttons">
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare" aria-label="Manubot">
-      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span>
-      
-        <span>Manubot</span>
-      
-    </a>
-  </div>
-
-
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare" aria-label="Source code">
-      <i class="icon fa-solid fa-code"></i>
-      
-        <span>Manuscript Source</span>
-      
-    </a>
-  </div>
-
-
-            
-              
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare" aria-label="Website">
-      <i class="icon fa-solid fa-globe"></i>
-      
-        <span>Website</span>
-      
-    </a>
-  </div>
-
-
-            
-          </div>
-        
-
-        
-          
-
-
-  <div class="tags" data-repo="greenelab/meta-review">
-    
-      <a href="/lab-website/?search=%22tag:%20open-science%22" class="tag" data-tooltip='Show items with the tag "open-science"'>
-        open-science
-      </a>
-    
-      <a href="/lab-website/?search=%22tag:%20collaboration%22" class="tag" data-tooltip='Show items with the tag "collaboration"'>
-        collaboration
-      </a>
-    
-  </div>
-
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gg2mjh" class="citation-image" aria-label="Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations">
-        <img src="" alt="Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gg2mjh" class="citation-title">
-        Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Genome Biology</span>
-         · 
-        <span class="citation-date">11 May 2020</span>
-         · 
-        <span class="citation-id">doi:10.1186/s13059-020-02021-3</span>
-      </div>
 
       
         
@@ -3424,34 +3669,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </div>
 </div>
 
+<h3 id="2021">2021</h3>
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gg7m48" class="citation-image" aria-label="Constructing knowledge graphs and their biomedical applications">
-        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" alt="Constructing knowledge graphs and their biomedical applications" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://doi.org/gjs695" class="citation-image" aria-label="Human Representation Learning">
+        <img src="" alt="Human Representation Learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gg7m48" class="citation-title">
-        Constructing knowledge graphs and their biomedical applications
+      <a href="https://doi.org/gjs695" class="citation-title">
+        Human Representation Learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        David N. Nicholson, Casey S. Greene
+        Angela Radulescu, Yeon Soon Shin, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">Computational and Structural Biotechnology Journal</span>
+        <span class="citation-publisher">Annual Review of Neuroscience</span>
          · 
-        <span class="citation-date">01 Jan 2020</span>
+        <span class="citation-date">08 Jul 2021</span>
          · 
-        <span class="citation-id">doi:10.1016/j.csbj.2020.05.017</span>
+        <span class="citation-id">doi:10.1146/annurev-neuro-092920-120559</span>
       </div>
+
+      
 
       
         
@@ -3469,31 +3718,33 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gfxjxf" class="citation-image" aria-label="Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality">
-        <img src="" alt="Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://doi.org/hbx26w" class="citation-image" aria-label="Intact Reinforcement Learning But Impaired Attentional Control During Multidimensional Probabilistic Learning in Older Adults">
+        <img src="" alt="Intact Reinforcement Learning But Impaired Attentional Control During Multidimensional Probabilistic Learning in Older Adults" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/gfxjxf" class="citation-title">
-        Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality
+      <a href="https://doi.org/hbx26w" class="citation-title">
+        Intact Reinforcement Learning But Impaired Attentional Control During Multidimensional Probabilistic Learning in Older Adults
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
+        Reka Daniel, Angela Radulescu, Yael Niv
 
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">openRxiv</span>
+        <span class="citation-publisher">The Journal of Neuroscience</span>
          · 
-        <span class="citation-date">11 Mar 2019</span>
+        <span class="citation-date">11 Dec 2019</span>
          · 
-        <span class="citation-id">doi:10.1101/573782</span>
+        <span class="citation-id">doi:10.1523/JNEUROSCI.0254-19.2019</span>
       </div>
+
+      
 
       
         
@@ -3506,36 +3757,390 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </div>
 </div>
 
-<h3 id="2018">2018</h3>
-
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/ckcj" class="citation-image" aria-label="Sci-Hub provides access to nearly all scholarly literature">
-        <img src="https://iiif.elifesciences.org/lax:32822/elife-32822-fig8-v3.tif/full/863,/0/default.webp" alt="Sci-Hub provides access to nearly all scholarly literature" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      <a href="https://2019.ccneuro.org/proceedings/0000481.pdf" class="citation-image" aria-label="A particle filtering account of selective attention during learning">
+        <img src="" alt="A particle filtering account of selective attention during learning" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
     <div class="citation-text">
       
-      
+      <i class="icon fa-solid fa-scroll"></i>
 
-      <a href="https://doi.org/ckcj" class="citation-title">
-        Sci-Hub provides access to nearly all scholarly literature
+      <a href="https://2019.ccneuro.org/proceedings/0000481.pdf" class="citation-title">
+        A particle filtering account of selective attention during learning
       </a>
 
       <div class="citation-authors" tabindex="0">
-        Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene
+        Angela Radulescu,  Yael Niv,  Nathaniel Daw
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Cognitive Computational Neuroscience (CCN) 2019</span>
+         · 
+        <span class="citation-date">01 Sep 2019</span>
+         · 
+        <span class="citation-id">https://2019.ccneuro.org/proceedings/0000481.pdf</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/gkcfjb" class="citation-image" aria-label="State representation in mental illness">
+        <img src="" alt="State representation in mental illness" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gkcfjb" class="citation-title">
+        State representation in mental illness
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Current Opinion in Neurobiology</span>
+         · 
+        <span class="citation-date">01 Apr 2019</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.conb.2019.03.011</span>
+      </div>
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/gf75z6" class="citation-image" aria-label="Holistic Reinforcement Learning: The Role of Structure and Attention">
+        <img src="" alt="Holistic Reinforcement Learning: The Role of Structure and Attention" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gf75z6" class="citation-title">
+        Holistic Reinforcement Learning: The Role of Structure and Attention
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Yael Niv, Ian Ballard
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Trends in Cognitive Sciences</span>
+         · 
+        <span class="citation-date">01 Apr 2019</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.tics.2019.01.010</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2017">2017</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/f9tpns" class="citation-image" aria-label="Dynamic Interaction between Reinforcement Learning and Attention in Multidimensional Environments">
+        <img src="" alt="Dynamic Interaction between Reinforcement Learning and Attention in Multidimensional Environments" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/f9tpns" class="citation-title">
+        Dynamic Interaction between Reinforcement Learning and Attention in Multidimensional Environments
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yuan Chang Leong, Angela Radulescu, Reka Daniel, Vivian DeWoskin, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Neuron</span>
+         · 
+        <span class="citation-date">01 Jan 2017</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.neuron.2016.12.040</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2016">2016</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/g6fsff" class="citation-image" aria-label="DYT1 dystonia increases risk taking in humans">
+        <img src="" alt="DYT1 dystonia increases risk taking in humans" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/g6fsff" class="citation-title">
+        DYT1 dystonia increases risk taking in humans
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        David Arkadir, Angela Radulescu, Deborah Raymond, Naomi Lubarr, Susan B Bressman, Pietro Mazzoni, Yael Niv
 
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">eLife</span>
          · 
-        <span class="citation-date">01 Mar 2018</span>
+        <span class="citation-date">01 Jun 2016</span>
          · 
-        <span class="citation-id">doi:10.7554/eLife.32822</span>
+        <span class="citation-id">doi:10.7554/eLife.14155</span>
       </div>
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/hbx26x" class="citation-image" aria-label="The effects of aging on the interaction between reinforcement learning and attention.">
+        <img src="" alt="The effects of aging on the interaction between reinforcement learning and attention." loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/hbx26x" class="citation-title">
+        The effects of aging on the interaction between reinforcement learning and attention.
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Angela Radulescu, Reka Daniel, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Psychology and Aging</span>
+         · 
+        <span class="citation-date">01 Jan 2016</span>
+         · 
+        <span class="citation-id">doi:10.1037/pag0000112</span>
+      </div>
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2015">2015</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/gf3ktm" class="citation-image" aria-label="Reinforcement Learning in Multidimensional Environments Relies on Attention Mechanisms">
+        <img src="" alt="Reinforcement Learning in Multidimensional Environments Relies on Attention Mechanisms" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gf3ktm" class="citation-title">
+        Reinforcement Learning in Multidimensional Environments Relies on Attention Mechanisms
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yael Niv, Reka Daniel, Andra Geana, Samuel J. Gershman, Yuan Chang Leong, Angela Radulescu, Robert C. Wilson
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">The Journal of Neuroscience</span>
+         · 
+        <span class="citation-date">27 May 2015</span>
+         · 
+        <span class="citation-id">doi:10.1523/JNEUROSCI.2978-14.2015</span>
+      </div>
+
+      
+        
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/publications/?search=%22tag:%20attention-learning%22" class="tag" data-tag="attention-learning" data-tooltip='Show items with the tag "attention-learning"'>
+        attention-learning
+      </a>
+    
+  </div>
+
+
+      
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<h3 id="2014">2014</h3>
+
+<div class="citation-container">
+  <div class="citation">
+    
+      <a href="https://doi.org/gdz7n9" class="citation-image" aria-label="Statistical Computations Underlying the Dynamics of Memory Updating">
+        <img src="" alt="Statistical Computations Underlying the Dynamics of Memory Updating" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-scroll"></i>
+
+      <a href="https://doi.org/gdz7n9" class="citation-title">
+        Statistical Computations Underlying the Dynamics of Memory Updating
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Samuel J. Gershman, Angela Radulescu, Kenneth A. Norman, Yael Niv
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">PLoS Computational Biology</span>
+         · 
+        <span class="citation-date">06 Nov 2014</span>
+         · 
+        <span class="citation-id">doi:10.1371/journal.pcbi.1003939</span>
+      </div>
+
+      
 
       
         
@@ -3555,303 +4160,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="grid" data-style="">
   
-<h3 id="2023">2023</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-      <a href="/lab-website/2023/02/23/example-post-3.html" class="post-excerpt-image" aria-label="Example post 3">
-        <img src="/lab-website/images/photo.jpg" alt="Example post 3" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2023/02/23/example-post-3.html">Example post 3</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>February 23, 2023</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20biology%22" class="tag" data-tooltip='Show items with the tag "biology"'>
-        biology
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20medicine%22" class="tag" data-tooltip='Show items with the tag "medicine"'>
-        medicine
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
-
-<h3 id="2021">2021</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2021/09/30/example-post-2.html">Example post 2</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>September 30, 2021</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
-
-<h3 id="2019">2019</h3>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2019/01/07/example-post-1.html">Example post 1</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/lab-website/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/lab-website/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>January 07, 2019</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>April 21, 2026</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20biology%22" class="tag" data-tooltip='Show items with the tag "biology"'>
-        biology
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20medicine%22" class="tag" data-tooltip='Show items with the tag "medicine"'>
-        medicine
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20big-data%22" class="tag" data-tooltip='Show items with the tag "big-data"'>
-        big-data
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    </div>
-  </div>
-</div>
-
 
 </div>
   </section>
@@ -4049,7 +4357,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:angela.radulescu@mssm.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -4064,7 +4372,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0003-2274-4265" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -4079,7 +4387,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=galouqYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -4094,7 +4402,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/angelaradulescu" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -4109,8 +4417,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+    <a class="button" href="https://bsky.app/profile/angelaradulescu.bsky.social" data-tooltip="Bluesky" data-style="bare" aria-label="Bluesky">
+      <i class="icon fa-brands fa-bluesky"></i>
       
     </a>
   </div>
@@ -4124,8 +4432,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
-      <i class="icon fa-brands fa-youtube"></i>
+    <a class="button" href="https://www.linkedin.com/in/angela-radulescu-900a7224" data-tooltip="LinkedIn" data-style="bare" aria-label="LinkedIn">
+      <i class="icon fa-brands fa-linkedin"></i>
       
     </a>
   </div>
@@ -4136,14 +4444,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
   <div>
     © 2026
-    Lab Website Template
+    Radulescu Lab
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
     </a>
   </div>
-
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>
