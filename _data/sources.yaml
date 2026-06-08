@@ -7,6 +7,24 @@
   tags:
     - attention-learning
 
+- id: https://osf.io/preprints/psyarxiv/k3etu_v1
+  type: paper
+  title: "The roots of rationality"
+  authors:
+    - Rahul Bhui
+    - Kevin Matthew Dorst
+    - Oriel FeldmanHall
+    - Stephen Fleming
+    - Jacqueline Gottlieb
+    - Catherine Hartley
+    - Tomas Lejarraga
+    - Johannes Müller-Trede
+    - Angela Radulescu
+    - Alexandra Rosati
+  publisher: PsyArXiv
+  date: "2026-04-12"
+  link: https://osf.io/preprints/psyarxiv/k3etu_v1
+
 - id: doi:10.64898/2026.03.11.710688
   type: paper
   title: Learning to Attend Through Value-Based Hypothesis Testing
@@ -17,6 +35,22 @@
   type: paper
   tags:
     - attention-learning
+
+- id: doi:10.21203/rs.3.rs-7166201/v1
+  type: paper
+  title: "VTA network dominance in depression confers distinct psychopathological states through blunted neural tracking of reward prediction errors"
+  authors:
+    - Laurel Morris
+    - Jacqueline Beltran
+    - Mu Li
+    - Yael Jacob
+    - Grace Butler
+    - Marishka Mehta
+    - James Murrough
+    - Angela Radulescu
+  publisher: Research Square
+  date: "2025-09-09"
+  link: https://www.researchsquare.com/article/rs-7166201/v1
 
 - id: doi:10.1101/2024.10.09.617461
   type: paper
@@ -29,6 +63,13 @@
   highlighted: true
   tags:
     - bd-phenotyping
+  title: "Dynamic self-efficacy as a computational mechanism of mania emergence"
+  authors:
+    - Jing Li
+    - Angela Radulescu
+  publisher: "Proceedings of the Annual Meeting of the Cognitive Science Society (46)"
+  date: "2024-07-01"
+  link: https://escholarship.org/uc/item/78m0779f
 
 - id: doi:10.1371/journal.pcbi.1011707
   type: paper
@@ -43,6 +84,14 @@
 
 - id: https://escholarship.org/uc/item/43q3n00p
   type: paper
+  title: "Name that state: How language affects human reinforcement learning"
+  authors:
+    - Angela Radulescu
+    - Wai Keen Vong
+    - Todd M. Gureckis
+  publisher: "Proceedings of the Annual Meeting of the Cognitive Science Society (44)"
+  date: "2022-07-01"
+  link: https://escholarship.org/uc/item/43q3n00p
 
 - id: doi:10.1523/JNEUROSCI.0254-19.2019
   type: paper
