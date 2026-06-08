@@ -10,7 +10,8 @@ nav:
 ## Mt. Sinai Center for Computational Psychiatry
 
 55 W 125th Street, 13th floor  
-New York, NY 10027
+New York, NY 10027  
+[sinaiccp@mssm.edu](mailto:sinaiccp@mssm.edu)
 
 <div class="map-embed">
   <iframe
