@@ -57,6 +57,8 @@
 
 - id: doi:10.1007/s42761-024-00270-0
   type: paper
+  tags:
+    - bd-phenotyping
 
 - id: https://escholarship.org/uc/item/78m0779f
   type: paper
@@ -73,6 +75,8 @@
 
 - id: doi:10.1371/journal.pcbi.1011707
   type: paper
+  tags:
+    - bd-phenotyping
 
 - id: doi:10.1146/annurev-neuro-092920-120559
   type: paper
@@ -122,6 +126,8 @@
 
 - id: doi:10.1016/j.conb.2019.03.011
   type: paper
+  tags:
+    - bd-phenotyping
 
 - id: doi:10.1162/OPMI.a.322
   type: paper
