@@ -1,6 +1,11 @@
 # Add one entry per publication. The cite pipeline (Manubot) expands these into
 # _data/citations.yaml — usually via GitHub Actions after you push.
 
+- id: doi:10.64898/2026.07.12.737635
+  type: paper
+  tags:
+    - bd-phenotyping
+
 - id: doi:10.64898/2026.05.03.722562
   type: paper
   highlighted: true
